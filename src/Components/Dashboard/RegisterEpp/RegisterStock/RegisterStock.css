@@ -1,0 +1,93 @@
+.register-stock {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-cantainer-stock {
+  background-color: #f5f5fc;
+  width: 20vw;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px 2px rgba(94, 87, 87, 0.2);
+  padding: 10px 0;
+}
+
+.form-container-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  width: 100%;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  height: 25px;
+  font-size: var(--lg);
+  padding-top: 4px;
+  margin-bottom: 4px;
+}
+
+label {
+  font-size: var(--lg);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.select-option {
+  margin-bottom: 12px !important;
+}
+
+.primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: var(--lg);
+}
+
+.login-button {
+  margin: 14px 0;
+}
+
+@media (min-width: 640px) {
+  .register-stock {
+    height: 92vh;
+    display: grid;
+    place-items: center;
+  }
+  .form-cantainer-stock {
+    width: 40vw;
+    /* height: 80vh; */
+  }
+  .input {
+    font-size: var(--sm);
+  }
+}
+
+@media (max-width: 640px) {
+  .register-stock {
+    height: 80vh;
+  }
+  .form-cantainer-stock {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+@media (max-height: 500px) {
+  .register-stock {
+    height: 85vh;
+  }
+}

@@ -1,0 +1,5 @@
+.container-main{
+    grid-area: main;
+    display: grid;
+    place-content: center;
+}
